@@ -21,10 +21,10 @@ class DeckTester(unittest.TestCase):
         card = deck.dealCard()
         self.assertIsNotNone(card)
 
-    # def testDeckIsShuffled():
-    #     deck = Deck.Deck()
-    #     deck.populateDeck(2, 14, 1, 1)
-    #     currentCard = deck.dealCard()
+    def testDeckIsShuffled(self):
+        deck = Deck.Deck()
+        deck.populateDeck(2, 14, 1, 1)
+        currentCard = deck.dealCard()
         
 
 
