@@ -19,11 +19,11 @@ class Deck:
 			topCard = self.cards.pop()
 			return topCard
 		except IndexError:
-			print('All cards have been dealt')
+			return 'All cards have been dealt'
 
 	def deckLength(self):
 		return len(self.cards)
 
-	def resetDeck(self):
-		self.cards = []
-		self.populateDeck()
+	# def resetDeck(self):
+	# 	self.cards = []
+	# 	self.populateDeck()
