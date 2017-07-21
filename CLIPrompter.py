@@ -1,5 +1,7 @@
 from Card import Rank, Suit
 from Hand import Hand
+from Game import Game
+from Player import Player
 
 class CLIPrompter():
 
@@ -15,7 +17,12 @@ class CLIPrompter():
 		msg = msg + str(cards[-1].rank.name)+'-'+str(cards[-1].suit.name)
 		return msg
 
+	def printWinnerAndBalanceInfo(self, winnerId, game):
+		print('Player '+str(winnerId)+' wins this round!')
+		for i, player in eumerate(game.players):
+			print('Player '+str(i)+' balance: '+player.balance)
+
+
 if __name__ == '__main__':
 	prompter = CLIPrompter()
-	val = prompter.promptNumberPlayers()
-	print(val)
+	prompter.printWinnerAndPotInfo(1)
