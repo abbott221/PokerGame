@@ -7,9 +7,6 @@ class CLIPrompterTester(unittest.TestCase):
         # self.game = Game()
         self.cliPrompt = CLIPrompter.CLIPrompter()
 
-    def test_greet_ReturnHelloMsg(self):
-        self.assertEqual(self.cliPrompt.greet(), 'Hello. Would you like to play some poker?')
-
     def test_printHand_PrintHandContent(self):
         self.assertEqual(self.cliPrompt.printHand(1), '2-H, 7-C, K-C, 5-D, J-S') 
 
