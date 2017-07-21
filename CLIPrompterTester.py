@@ -13,7 +13,8 @@ class CLIPrompterTester(unittest.TestCase):
         self.hand = Hand(self.cards)
 
     def test_printHand_PrintHandContent(self):
-        self.assertEqual(self.cliPrompt.printHand(self.hand.cards), '2-H, 7-C, K-C, 5-D, J-S') 
+        self.assertEqual(self.cliPrompt.printHand(self.hand.cards), 
+            'KING-CLUBS, JACK-SPADES, SEVEN-CLUBS, FIVE-DIAMONDS, TWO-HEARTS') 
 
     def test_promptNumUsers_Return2(self):
         print('return 2 test')
